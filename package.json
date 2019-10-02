@@ -10,13 +10,20 @@
   "author": "fosemberg",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha tests --recursive"
+    "test": "gulp default && node tests/lib/rules/map.js"
   },
   "dependencies": {
+    "eslint": "^6.5.1",
     "requireindex": "~1.1.0"
   },
   "devDependencies": {
-    "eslint": "~3.9.1",
+    "@babel/core": "^7.6.3",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/preset-env": "^7.6.3",
+    "eslint-utils": "^1.4.2",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-livereload": "^4.0.2",
     "mocha": "^3.1.2"
   },
   "engines": {
